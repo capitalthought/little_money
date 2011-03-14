@@ -106,4 +106,9 @@ class TestLittleMoney < MiniTest::Unit::TestCase
     assert_equal "$100.00", money.round(1).to_s(:dollar)
   end
 
+  def test_does_not_round_when_already_at_necessary_precision
+    money = LittleMoney.parse("4.99")
+    assert_equal "$4.99", money.round(2).to_s(:dollar)
+  end
+
 end
