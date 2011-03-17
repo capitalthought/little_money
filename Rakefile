@@ -6,7 +6,7 @@ require 'hoe'
 # Hoe.plugin :compiler
 # Hoe.plugin :email
 # Hoe.plugin :gem_prelude_sucks
-# Hoe.plugin :gemspec
+Hoe.plugin :gemspec
 # Hoe.plugin :git
 # Hoe.plugin :inline
 Hoe.plugin :minitest
